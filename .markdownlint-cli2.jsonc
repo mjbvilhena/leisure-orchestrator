@@ -1,0 +1,15 @@
+{
+  "globs": [
+    "**/*.md"
+  ],
+  "ignores": [
+    ".agents/**",
+    ".cursor/**",
+    "node_modules/**"
+  ],
+  "config": {
+    "default": true,
+    "MD013": false,
+    "MD029": false
+  }
+}
