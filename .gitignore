@@ -16,3 +16,12 @@ Thumbs.db
 # Logs and caches
 *.log
 .cache/
+
+# Node / TypeScript (for when application code lands)
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.npm/
+.eslintcache

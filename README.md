@@ -29,12 +29,14 @@ Store tokens in GitHub Actions secrets. Do not commit them.
 
 ## Branch protection
 
-On `master` (or the default branch), enable:
+Enforced on `master` by the [Protect master](https://github.com/mjbvilhena/leisure-orchestrator/rules/23146657) ruleset:
 
 1. Require a pull request before merging
 2. Require at least one approving review (CODEOWNERS covers the tree)
 3. Require status checks to pass: `Secret scan`, `Markdown lint`, and `Workflow lint`
-4. Do not allow bypassing these rules for administrators unless there is an explicit break-glass process
+4. Disallow force-pushes and branch deletion
+
+**Break-glass:** repository admins may bypass these rules only when merging a pull request. Direct pushes to `master` remain blocked.
 
 ## Local lint
 
