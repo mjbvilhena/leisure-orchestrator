@@ -7,6 +7,7 @@ This repository currently holds product specification and related documentation.
 ## Contents
 
 - `docs/product-spec.md` — product specification and MVP epics
+- `docs/product/backlog.md` — product backlog with status (audited against the repo)
 - `.github/workflows/` — CI quality checks
 - `.github/CODEOWNERS` — default review ownership
 

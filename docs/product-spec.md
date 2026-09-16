@@ -4,11 +4,11 @@ Standard product specification / epic pack that bridges the vision document and 
 
 **Quality bar:** A reader can understand the why, who it is for, what is strictly in MVP, and the primary workflows, without needing to ping the author. No sprint-level tasks or UI pixel details.
 
-**Source:** `/home/mjbvilhena/Documents/ResearchProjects/leisure_orchestrator_product_vision.md`
+**Source:** Local vision draft **not yet vendored into this repository**. At authoring time it lived at `/home/mjbvilhena/Documents/ResearchProjects/leisure_orchestrator_product_vision.md` on the author’s machine. Track adding `docs/product/vision.md` as backlog Task 5.1.
 
 **Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs in this workspace. This spec is grounded in the vision document. No personas, KPIs, or success metrics were invented. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**.
 
-**Status:** Epics approved by **mjbvilhena** (2026-09-15). Open questions: none remaining.
+**Status:** Epics approved by **mjbvilhena** (2026-09-15). Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`.
 
 ---
 
@@ -204,7 +204,7 @@ None remaining.
 
 ## Next step
 
-Epics are approved. Do not write sprint-level user stories in this spec. Run `/sdlc-user-story-refiner` on each epic in this order:
+Epics are approved. Do not write sprint-level user stories in this spec. Track delivery status in `docs/product/backlog.md`. Run `/sdlc-user-story-refiner` on each epic in this order:
 
 1. Epic 1 — Natural-language intake of trip constraints (includes accounts and itinerary history)
 2. Epic 2 — Supervisor and specialist-agent delegation
