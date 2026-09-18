@@ -2,7 +2,7 @@
 
 Seed for `get_layer_consultant` (`orchestration`). Place this file at the repository root unless a later convention is documented.
 
-**Authority:** `docs/product/specification.md` only. The laptop-local vision file is **not** in this repository (backlog Task 5.1). Do not treat this file as a source of new product decisions.
+**Authority:** `docs/product/specification.md` (grounded in `docs/product/vision.md`). Do not treat this file as a source of new product decisions.
 
 **Rule:** Every bound below cites its specification source. If an orchestration fact is not cited, it is not a product rule. Travel-domain inventory rules live in `DOMAIN.md`.
 

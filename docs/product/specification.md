@@ -4,7 +4,7 @@ Standard product specification / epic pack that bridges the vision document and 
 
 **Quality bar:** A reader can understand the why, who it is for, what is strictly in MVP, and the primary workflows, without needing to ping the author. No sprint-level tasks or UI pixel details.
 
-**Source:** Local vision draft **not yet vendored into this repository**. At authoring time it lived at `/home/mjbvilhena/Documents/ResearchProjects/leisure_orchestrator_product_vision.md` on the author’s machine. Track adding `docs/product/vision.md` as backlog Task 5.1 in `docs/product/backlog.md`. Task 5.1 remains blocked until that laptop-local file can be attached; do not invent a vision document.
+**Source:** In-repo product vision at `docs/product/vision.md`.
 
 **Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs when this spec was first authored. Travel and orchestration rules that this specification already states are now seeded in repo-root `DOMAIN.md` and `LAYER.md`. No personas, KPIs, vendors, or success metrics were invented. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**. Topics the specification does not state are listed as **Unset — do not invent** in those files.
 
@@ -171,7 +171,7 @@ Not done if half the stories shipped a different product than the epic described
 
 ## Risks & Dependencies
 
-- **Teams, APIs, or existing systems:** The vision does not name vendors. MVP depends on per-specialist internal curated KBs, live-web fallback, web + CLI chat-like surfaces, accounts, and (if the user opts in) a **pass-through** charged path (providers charge the user). Domain and layer consultant catalogs were empty at spec authoring; constraints this specification already states are seeded in repo-root `DOMAIN.md` (travel) and `LAYER.md` (orchestration). The vision file is still not in git (Task 5.1).
+- **Teams, APIs, or existing systems:** The vision does not name vendors. MVP depends on per-specialist internal curated KBs, live-web fallback, web + CLI chat-like surfaces, accounts, and (if the user opts in) a **pass-through** charged path (providers charge the user). Domain and layer consultant catalogs were empty at spec authoring; constraints this specification already states are seeded in repo-root `DOMAIN.md` (travel) and `LAYER.md` (orchestration). The product vision is `docs/product/vision.md`.
 - **Biggest product/technical risks:**
   - Optional charged booking **widens** the vision MVP. Charged path is pass-through (providers charge the user); card-integration and provider checkout still add liability and brittleness.
   - Budget coordination across agents is the core proof; race conditions, stale remaining-budget, and infeasible combinations are the main failure modes.
