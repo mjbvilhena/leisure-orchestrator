@@ -4,11 +4,11 @@ Standard product specification / epic pack that bridges the vision document and 
 
 **Quality bar:** A reader can understand the why, who it is for, what is strictly in MVP, and the primary workflows, without needing to ping the author. No sprint-level tasks or UI pixel details.
 
-**Source:** Local vision draft **not yet vendored into this repository**. At authoring time it lived at `/home/mjbvilhena/Documents/ResearchProjects/leisure_orchestrator_product_vision.md` on the author’s machine. Track adding `docs/product/vision.md` as backlog Task 5.1.
+**Source:** In-repo product vision at `docs/product/vision.md`.
 
-**Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs in this workspace. This spec is grounded in the vision document. No personas, KPIs, or success metrics were invented. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**.
+**Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs when this spec was first authored. Travel and orchestration rules that this specification already states are now seeded in repo-root `DOMAIN.md` and `LAYER.md`. No personas, KPIs, vendors, or success metrics were invented. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**. Topics the specification does not state are listed as **Unset — do not invent** in those files.
 
-**Status:** Epics approved by **mjbvilhena** (2026-09-15). Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`.
+**Status:** Epics approved by **mjbvilhena** (2026-09-15). Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 user stories: `docs/product/user-stories/epic-1/`.
 
 ---
 
@@ -171,7 +171,7 @@ Not done if half the stories shipped a different product than the epic described
 
 ## Risks & Dependencies
 
-- **Teams, APIs, or existing systems:** The vision does not name vendors. MVP depends on per-specialist internal curated KBs, live-web fallback, web + CLI chat-like surfaces, accounts, and (if the user opts in) a **pass-through** charged path (providers charge the user). Domain and layer consultant catalogs are empty; travel and orchestration constraints are not yet encoded in `DOMAIN.md` / `LAYER.md`.
+- **Teams, APIs, or existing systems:** The vision does not name vendors. MVP depends on per-specialist internal curated KBs, live-web fallback, web + CLI chat-like surfaces, accounts, and (if the user opts in) a **pass-through** charged path (providers charge the user). Domain and layer consultant catalogs were empty at spec authoring; constraints this specification already states are seeded in repo-root `DOMAIN.md` (travel) and `LAYER.md` (orchestration). The product vision is `docs/product/vision.md`.
 - **Biggest product/technical risks:**
   - Optional charged booking **widens** the vision MVP. Charged path is pass-through (providers charge the user); card-integration and provider checkout still add liability and brittleness.
   - Budget coordination across agents is the core proof; race conditions, stale remaining-budget, and infeasible combinations are the main failure modes.
@@ -204,9 +204,9 @@ None remaining.
 
 ## Next step
 
-Epics are approved. Do not write sprint-level user stories in this spec. Track delivery status in `docs/product/backlog.md`. Run `/sdlc-user-story-refiner` on each epic in this order:
+Epics are approved. Do not write sprint-level tasks in this spec. Track delivery status in `docs/product/backlog.md`. Epic 1 user stories are in `docs/product/user-stories/epic-1/`. Continue `/sdlc-user-story-refiner` (or equivalent) on remaining epics in this order:
 
-1. Epic 1 — Natural-language intake of trip constraints (includes accounts and itinerary history)
+1. Epic 1 — Natural-language intake of trip constraints (includes accounts and itinerary history) — stories: `docs/product/user-stories/epic-1/`
 2. Epic 2 — Supervisor and specialist-agent delegation
 3. Epic 3 — Shared remaining-budget coordination
 4. Epic 4 — Finalized itinerary with fulfillment choice

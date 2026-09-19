@@ -6,8 +6,12 @@ This repository currently holds product specification and related documentation.
 
 ## Contents
 
-- `docs/product-spec.md` — product specification and MVP epics
+- `docs/product/vision.md` — product vision
+- `docs/product/specification.md` — product specification and MVP epics
 - `docs/product/backlog.md` — product backlog with status (audited against the repo)
+- `docs/product/user-stories/epic-1/` — Epic 1 user stories (intake, accounts, history)
+- `DOMAIN.md` — travel-domain constraints seeded from the specification (for domain consultants)
+- `LAYER.md` — orchestration-layer constraints seeded from the specification (for layer consultants)
 - `.github/workflows/` — CI quality checks
 - `.github/CODEOWNERS` — default review ownership
 

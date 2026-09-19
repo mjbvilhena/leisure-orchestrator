@@ -1,0 +1,52 @@
+# US-E1-01: Signed-in consumer account
+
+**Epic:** 1 — Natural-language intake of trip constraints
+**Issue Type:** User Story
+**Status:** Ready for development (story only; no application delivery in this change)
+**Source:** Core Workflows §1; Resolved with Product Owner — Persistence; Epic 1
+
+## 1. Description
+
+**As a** consumer in the travel market,
+**I want to** use the product while signed in to an account,
+**So that** my trip prompts and coordinated itineraries can belong to me and support itinerary history.
+
+## 2. Business Context
+
+Accounts and itinerary history are a Product Owner scope add in MVP and are part of Epic 1. The primary workflow starts with a signed-in consumer on web or CLI. The specification does not name additional personas.
+
+## 3. Acceptance Criteria
+
+### AC1: Web surface requires a signed-in consumer
+
+- **Given** a consumer in the travel market
+- **When** they use the web chat-like surface to work on a trip request
+- **Then** they do so as a signed-in account holder
+
+### AC2: CLI surface requires a signed-in consumer
+
+- **Given** a consumer in the travel market
+- **When** they use the CLI chat-like surface to work on a trip request
+- **Then** they do so as a signed-in account holder
+
+### AC3: Account is the persistence identity for history
+
+- **Given** a signed-in consumer
+- **When** the product stores or retrieves itinerary history
+- **Then** that history is associated with their account (see US-E1-07)
+
+## 4. Technical Constraints & Out of Scope
+
+- **Constraints:** Web and CLI are both in MVP. Auth mechanism is unset in the specification — do not invent a vendor or protocol in this story.
+- **Out of Scope:** Password reset, SSO, social login, multi-user trip workspaces, sharing, guest/anonymous intake, API-only access.
+
+## 5. Design & UI/UX
+
+N/A — the specification forbids UI pixel details. Surfaces are chat-like web and CLI.
+
+## 6. Definition of Done
+
+- [ ] All acceptance criteria are verified
+- [ ] Behavior matches `docs/product/specification.md` (no invented capabilities)
+- [ ] `DOMAIN.md` / `LAYER.md` updated if this story moved a boundary
+- [ ] Stakeholder acceptance: **mjbvilhena**
