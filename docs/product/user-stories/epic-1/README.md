@@ -2,7 +2,7 @@
 
 **Epic:** Natural-language intake of trip constraints
 **Source:** `docs/product/specification.md` (Epic 1; Core Workflows §1; Resolved with Product Owner)
-**Backlog:** Task 1.1 *(Done)* — US-E1-01 through US-E1-07 approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). Story-artefact approval is not implementation Done. Task 1.2 *(Not done)* until the outcome ships in an application
+**Backlog:** Task 1.1 *(Done)* — US-E1-01 through US-E1-07 approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). Story-artefact approval is not implementation Done. Task 1.2 *(Not done)* until the outcome ships in an application. Task 1.3 *(In progress)* — design/planning drafts at `docs/technical_design/` (not technical-design approval).
 
 ## Outcome this epic must enable
 
