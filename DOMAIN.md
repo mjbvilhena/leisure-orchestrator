@@ -37,7 +37,7 @@ Seed for `get_domain_consultant` (`travel`). Place this file at the repository r
 
 5. **Party size is required**; if omitted, ask before planning.
 6. **Any destination** the curated tools (plus web fallback) can reach. Tokyo is the golden-path example, not a lock.
-7. **Accounts and itinerary history.**
+7. **Accounts and itinerary history.** **Google sign-in** (the consumer authenticates with Google on the MVP web and CLI chat-like surfaces as a way to be a signed-in account holder) is a Product Owner decision. *(Source: In Scope MVP — Product Owner scope adds; Resolved with Product Owner — Persistence; Resolved with Product Owner — Google sign-in)*
 8. **Optional dual-mode fulfillment:** the user chooses in-product charged booking **or** direct-booking links.
 9. **Preference scoring:** the user rates named dimensions (at least price, duration, stops) 1–5; that matrix is judgement, still bound by budget and dates.
 

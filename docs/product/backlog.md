@@ -6,7 +6,7 @@
 
 > Outcome (from product specification): a signed-in consumer can submit a trip prompt on web or CLI (chat-like), retrieve past coordinated itineraries, and produce structured constraints (budget, dates, destination, preferences, required party size, 1–5 scoring matrix) for the Supervisor.
 
-- **Task 1.1** *(In progress)*: Refine Epic 1 into user stories (product-spec Next step; `/sdlc-user-story-refiner` or equivalent). *(Evidence: 2026-09-20 re-audit — US-E1-01 through US-E1-07 exist under `docs/product/user-stories/epic-1/`, plus `docs/product/user-stories/README.md` (merged PR #5). No named human approval of those stories is recorded; stakeholder-acceptance checkboxes remain unchecked. Drafted or merged story files are not approval. No Epic 2–4 story folders.)*
+- **Task 1.1** *(In progress)*: Refine Epic 1 into user stories (product-spec Next step; `/sdlc-user-story-refiner` or equivalent). *(Evidence: 2026-09-20 re-audit — US-E1-01 through US-E1-07 exist under `docs/product/user-stories/epic-1/`, plus `docs/product/user-stories/README.md` (merged PR #5). US-E1-01 was updated in this review session to bring **Google sign-in** into scope as a Product Owner decision (**mjbvilhena**, 2026-09-20); the story remains drafted, not approved. No named human approval of those stories is recorded; stakeholder-acceptance checkboxes remain unchecked. Drafted or merged story files are not approval. No Epic 2–4 story folders.)*
 - **Task 1.2** *(Not done)*: Deliver Epic 1 outcome (accounts, itinerary history, chat-like intake with party-size prompt and scoring). *(Evidence: 2026-09-20 re-audit — repo still docs + CI only; no application source, tests, or runtime.)*
 
 ## Epic 2: Supervisor and specialist-agent delegation

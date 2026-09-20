@@ -6,9 +6,9 @@ Standard product specification / epic pack that bridges the vision document and 
 
 **Source:** In-repo product vision at `docs/product/vision.md`.
 
-**Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs when this spec was first authored. Travel and orchestration rules that this specification already states are now seeded in repo-root `DOMAIN.md` and `LAYER.md`. No personas, KPIs, vendors, or success metrics were invented. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**. Topics the specification does not state are listed as **Unset — do not invent** in those files.
+**Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs when this spec was first authored. Travel and orchestration rules that this specification already states are now seeded in repo-root `DOMAIN.md` and `LAYER.md`. No personas, KPIs, or success metrics were invented. Vendors remain unnamed except **Google sign-in**, which is a Product Owner decision (see **Resolved with Product Owner**), not an invented identity vendor. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**. Topics the specification does not state are listed as **Unset — do not invent** in those files.
 
-**Status:** Spec and MVP epics approved by **mjbvilhena** (2026-09-15, PR #1). Epic 1 user stories drafted, awaiting named human approval. Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 drafts: `docs/product/user-stories/epic-1/`.
+**Status:** Spec and MVP epics approved by **mjbvilhena** (2026-09-15, PR #1). Epic 1 user stories drafted, awaiting named human approval. US-E1-01 includes Google sign-in per Product Owner request (**mjbvilhena**, 2026-09-20); that story is still not approved. Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 drafts: `docs/product/user-stories/epic-1/`.
 
 ---
 
@@ -50,7 +50,7 @@ What MUST be delivered to validate the hypothesis: prove the Multi-Agent Orchest
 
 5. **Party size is required**; if omitted, ask before planning.
 6. **Any destination** the curated tools (plus web fallback) can reach. Tokyo is the golden-path example, not a lock.
-7. **Accounts and itinerary history.**
+7. **Accounts and itinerary history.** **Google sign-in** (the consumer authenticates with Google on the MVP web and CLI chat-like surfaces as a way to be a signed-in account holder) is a Product Owner decision (**mjbvilhena**, 2026-09-20).
 8. **Optional dual-mode fulfillment:** the user chooses in-product charged booking **or** direct-booking links. (Widens the vision’s “no real financial transactions” stance; liability and card integration remain risks.)
 9. **Preference scoring:** the user rates named dimensions (at least price, duration, stops) 1–5; the Supervisor uses that matrix as judgement, still bound by budget and dates.
 
@@ -86,7 +86,7 @@ Keep this narrative. Leave Given/When/Then to later user stories.
 
 ### 1. Constrained trip request → coordinated itinerary
 
-1. The consumer uses **web or CLI** (chat-like) and is signed in (accounts are in MVP).
+1. The consumer uses **web or CLI** (chat-like) and is signed in (accounts are in MVP). **Google sign-in** is in scope as a way the consumer authenticates (Product Owner decision, **mjbvilhena**, 2026-09-20).
 2. They submit a natural-language prompt with budget, dates, destination, preferences, and **party size**. If party size is missing, the product asks before planning.
 3. They score named dimensions (at least price, duration, stops) from 1 (not important) to 5 (critical).
 4. The Supervisor extracts constraints, holds the overall budget, and keeps the scoring matrix.
@@ -139,9 +139,9 @@ Not done if half the stories shipped a different product than the epic described
 
 **Outcome:** A signed-in consumer can submit a trip prompt on web or CLI (chat-like), retrieve past coordinated itineraries, and the system has a structured, machine-usable set of constraints (budget, dates, destination, preferences, required party size, 1–5 scoring matrix) for the Supervisor.
 
-**MVP includes:** Accounts and itinerary history (Product Owner scope add; not in the vision); parsing/accepting those fields from free text (Tokyo-style request); asking when party size is missing; any destination the tools can reach.
+**MVP includes:** Accounts and itinerary history (Product Owner scope add; not in the vision), including **Google sign-in** on web and CLI as a way to be a signed-in account holder (Product Owner decision, **mjbvilhena**, 2026-09-20); parsing/accepting those fields from free text (Tokyo-style request); asking when party size is missing; any destination the tools can reach.
 
-**Not this epic:** Completing bookings; UI pixel details; social features, sharing, or multi-user trip workspaces (unmentioned).
+**Not this epic:** Completing bookings; UI pixel details; social features, sharing, or multi-user trip workspaces (unmentioned); social login other than Google; generic SSO/SAML; password-reset flows; guest/anonymous intake.
 
 ### Epic 2 — Supervisor and specialist-agent delegation
 
@@ -196,6 +196,7 @@ None remaining.
 - [x] **Party size:** Required; ask if missing.
 - [x] **Destination coverage:** Any destination the tools can reach. Tokyo is the example, not a lock.
 - [x] **Persistence:** Accounts and itinerary history are in MVP (scope add), as part of **Epic 1**.
+- [x] **Google sign-in:** Consumers authenticate with Google on the MVP web and CLI chat-like surfaces as a way to be signed-in account holders. Product Owner decision (**mjbvilhena**, 2026-09-20). Other social providers (Apple, Facebook, and others), generic SSO/SAML, password-reset flows, and guest/anonymous intake remain out of scope. Auth protocol, SDK, and session store remain unset — do not invent them.
 - [x] **Epic acceptance:** **mjbvilhena** (spec owner).
 - [x] **Payments:** Optional dual-mode in MVP (charged booking vs. links). Widens the vision. Charged path is **pass-through** (providers charge the user); this product is not merchant of record.
 - [x] **Per-agent KB:** Yes — internal curated KB per specialist, not a consumer-facing editor.
@@ -208,7 +209,7 @@ The product specification and MVP epics were approved by **mjbvilhena** (2026-09
 
 Product spec, epics, user stories, and technical design (including ADRs) need **named human approval**. Drafted or merged files are not approval. Do not mark stories or epics Done or “complete” without that.
 
-Epic 1 user stories are **drafted** at `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07; files merged in PR #5). There is no named human sign-off of those stories. Epic 1 application delivery remains Task 1.2 *(Not done)*.
+Epic 1 user stories are **drafted** at `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07; files merged in PR #5). US-E1-01 now includes **Google sign-in** as a Product Owner decision (**mjbvilhena**, 2026-09-20) and remains unapproved. There is no named human sign-off of those stories. Epic 1 application delivery remains Task 1.2 *(Not done)*.
 
 **Next:** await named human approval (**mjbvilhena**) of the existing Epic 1 stories. Do not start Epic 2 (or later) story refinement as if Epic 1 stories were signed off.
 

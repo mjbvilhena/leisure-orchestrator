@@ -12,7 +12,7 @@ A signed-in consumer can submit a trip prompt on web or CLI (chat-like), retriev
 
 | ID | File | Title |
 | --- | --- | --- |
-| US-E1-01 | [`us-e1-01-signed-in-account.md`](us-e1-01-signed-in-account.md) | Signed-in consumer account |
+| US-E1-01 | [`us-e1-01-signed-in-account.md`](us-e1-01-signed-in-account.md) | Signed-in consumer account (Google sign-in in scope) |
 | US-E1-02 | [`us-e1-02-submit-trip-prompt.md`](us-e1-02-submit-trip-prompt.md) | Submit a chat-like trip prompt |
 | US-E1-03 | [`us-e1-03-structured-constraints.md`](us-e1-03-structured-constraints.md) | Structured constraints for the Supervisor |
 | US-E1-04 | [`us-e1-04-party-size-required.md`](us-e1-04-party-size-required.md) | Ask when party size is missing |
@@ -29,3 +29,4 @@ Do not extend these stories into Epics 2–4:
 - Remaining-budget handoff, rebalance, or fail-closed overflow (Epic 3)
 - UI pixel details
 - Social features, sharing, or multi-user trip workspaces (unmentioned in the specification)
+- Social login other than Google; generic SSO/SAML; password-reset flows; guest/anonymous intake
