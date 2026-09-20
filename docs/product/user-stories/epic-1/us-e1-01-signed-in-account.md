@@ -2,7 +2,7 @@
 
 **Epic:** 1 — Natural-language intake of trip constraints
 **Issue Type:** User Story
-**Status:** Drafted — awaiting named human approval (not ready for development)
+**Status:** Approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefact). Ready for later development gates. Not Done as shipped software.
 **Source:** Core Workflows §1; Resolved with Product Owner — Persistence; Resolved with Product Owner — Google sign-in; Epic 1
 
 ## 1. Description
@@ -63,4 +63,4 @@ N/A — the specification forbids UI pixel details. Surfaces are chat-like web a
 - [ ] All acceptance criteria are verified
 - [ ] Behavior matches `docs/product/specification.md` (no invented capabilities)
 - [ ] `DOMAIN.md` / `LAYER.md` updated if this story moved a boundary
-- [ ] Stakeholder acceptance: **mjbvilhena**
+- [x] Stakeholder acceptance: **mjbvilhena** (2026-09-20 — story-artefact approval, not implementation Done)
