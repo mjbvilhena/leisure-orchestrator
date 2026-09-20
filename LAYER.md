@@ -17,6 +17,7 @@ Seed for `get_layer_consultant` (`orchestration`). Place this file at the reposi
 - **Channel:** Web + CLI, both **chat-like**. Not a multi-field form as primary intake, not API-only. *(Source: Resolved with Product Owner — Channel; In Scope MVP)*
 - The consumer is **signed in** (accounts are in MVP). **Google sign-in** is in scope as a way the consumer authenticates on web and CLI. *(Source: Core Workflows §1; Resolved with Product Owner — Persistence; Resolved with Product Owner — Google sign-in)*
 - Intake is a natural-language prompt with budget, dates, destination, preferences, and required party size, plus a 1–5 scoring matrix. *(Source: Epic 1; Core Workflows §1)*
+- Scoring-matrix **capture** presents all required dimensions **at the same time** so each score is visible in the context of the others: a **widget** on web, a **TUI widget** on CLI. Not one-at-a-time chat that hides sibling scores. Pixel details unset. This widget is not the primary trip intake (primary intake remains chat-like natural language). *(Source: Resolved with Product Owner — Scoring matrix capture; Core Workflows §1)*
 
 ## Agent team (named)
 
@@ -100,3 +101,4 @@ The specification does not state the following. Omit them from implementation gu
 - Card-integration provider or checkout UX beyond pass-through vs links
 - Feature flags, rollout rings, or SLA/latency numbers
 - Partial-itinerary UX other than the specified fail-closed path
+- Widget/TUI library, pixel layout, or control look beyond simultaneous presentation of the required scoring dimensions *(Source: Resolved with Product Owner — Scoring matrix capture names the interaction pattern, not pixels)*

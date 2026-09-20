@@ -16,7 +16,7 @@ A signed-in consumer can submit a trip prompt on web or CLI (chat-like), retriev
 | US-E1-02 | [`us-e1-02-submit-trip-prompt.md`](us-e1-02-submit-trip-prompt.md) | Submit a chat-like trip prompt | Approved by **mjbvilhena** (2026-09-20). Not Done as shipped software. |
 | US-E1-03 | [`us-e1-03-structured-constraints.md`](us-e1-03-structured-constraints.md) | Structured constraints for the Supervisor | Approved by **mjbvilhena** (2026-09-20). Not Done as shipped software. |
 | US-E1-04 | [`us-e1-04-party-size-required.md`](us-e1-04-party-size-required.md) | Ask when party size is missing | Approved by **mjbvilhena** (2026-09-20). Not Done as shipped software. |
-| US-E1-05 | [`us-e1-05-preference-scoring.md`](us-e1-05-preference-scoring.md) | Capture the 1–5 scoring matrix | Drafted — awaiting named human approval |
+| US-E1-05 | [`us-e1-05-preference-scoring.md`](us-e1-05-preference-scoring.md) | Capture the 1–5 scoring matrix (simultaneous web widget + CLI TUI) | Drafted — awaiting named human approval |
 | US-E1-06 | [`us-e1-06-any-destination.md`](us-e1-06-any-destination.md) | Any destination the tools can reach | Drafted — awaiting named human approval |
 | US-E1-07 | [`us-e1-07-itinerary-history.md`](us-e1-07-itinerary-history.md) | Retrieve itinerary history | Drafted — awaiting named human approval |
 

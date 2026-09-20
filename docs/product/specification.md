@@ -8,7 +8,7 @@ Standard product specification / epic pack that bridges the vision document and 
 
 **Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs when this spec was first authored. Travel and orchestration rules that this specification already states are now seeded in repo-root `DOMAIN.md` and `LAYER.md`. No personas, KPIs, or success metrics were invented. Vendors remain unnamed except **Google sign-in**, which is a Product Owner decision (see **Resolved with Product Owner**), not an invented identity vendor. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**. Topics the specification does not state are listed as **Unset — do not invent** in those files.
 
-**Status:** Spec and MVP epics approved by **mjbvilhena** (2026-09-15, PR #1). US-E1-01 through US-E1-04 approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). US-E1-05 through US-E1-07 remain drafted, awaiting named human approval. Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 stories: `docs/product/user-stories/epic-1/`.
+**Status:** Spec and MVP epics approved by **mjbvilhena** (2026-09-15, PR #1). US-E1-01 through US-E1-04 approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). US-E1-05 includes simultaneous scoring-matrix capture (web widget; CLI TUI widget) per Product Owner request (**mjbvilhena**, 2026-09-20) and remains drafted, not approved. US-E1-06 and US-E1-07 remain drafted, awaiting named human approval. Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 stories: `docs/product/user-stories/epic-1/`.
 
 ---
 
@@ -52,7 +52,7 @@ What MUST be delivered to validate the hypothesis: prove the Multi-Agent Orchest
 6. **Any destination** the curated tools (plus web fallback) can reach. Tokyo is the golden-path example, not a lock.
 7. **Accounts and itinerary history.** **Google sign-in** (the consumer authenticates with Google on the MVP web and CLI chat-like surfaces as a way to be a signed-in account holder) is a Product Owner decision (**mjbvilhena**, 2026-09-20).
 8. **Optional dual-mode fulfillment:** the user chooses in-product charged booking **or** direct-booking links. (Widens the vision’s “no real financial transactions” stance; liability and card integration remain risks.)
-9. **Preference scoring:** the user rates named dimensions (at least price, duration, stops) 1–5; the Supervisor uses that matrix as judgement, still bound by budget and dates.
+9. **Preference scoring:** the user rates named dimensions (at least price, duration, stops) 1–5; the Supervisor uses that matrix as judgement, still bound by budget and dates. Capture presents **all required dimensions at the same time** (web widget; CLI TUI widget) so each score is visible in the context of the others. Product Owner decision (**mjbvilhena**, 2026-09-20). Pixel details unset. Application of the matrix to search is Epic 2.
 
 **MVP agent team (explicit in the vision):**
 
@@ -88,7 +88,7 @@ Keep this narrative. Leave Given/When/Then to later user stories.
 
 1. The consumer uses **web or CLI** (chat-like) and is signed in (accounts are in MVP). **Google sign-in** is in scope as a way the consumer authenticates (Product Owner decision, **mjbvilhena**, 2026-09-20).
 2. They submit a natural-language prompt with budget, dates, destination, preferences, and **party size**. If party size is missing, the product asks before planning.
-3. They score named dimensions (at least price, duration, stops) from 1 (not important) to 5 (critical).
+3. They score named dimensions (at least price, duration, stops) from 1 (not important) to 5 (critical). All required dimensions are presented **at the same time** so each score is visible in the context of the others: a **widget** on web, a **TUI widget** on CLI (Product Owner decision, **mjbvilhena**, 2026-09-20). Not one-at-a-time chat that hides sibling scores. Pixel details unset.
 4. The Supervisor extracts constraints, holds the overall budget, and keeps the scoring matrix.
 5. The Supervisor delegates to the Flight Broker, Lodging Broker, and Concierge Agent.
 6. Specialists query their internal curated KB first; live web only if that KB has no hit. They return candidates that fit their remaining-budget slice and the scoring matrix.
@@ -139,7 +139,7 @@ Not done if half the stories shipped a different product than the epic described
 
 **Outcome:** A signed-in consumer can submit a trip prompt on web or CLI (chat-like), retrieve past coordinated itineraries, and the system has a structured, machine-usable set of constraints (budget, dates, destination, preferences, required party size, 1–5 scoring matrix) for the Supervisor.
 
-**MVP includes:** Accounts and itinerary history (Product Owner scope add; not in the vision), including **Google sign-in** on web and CLI as a way to be a signed-in account holder (Product Owner decision, **mjbvilhena**, 2026-09-20); parsing/accepting those fields from free text (Tokyo-style request); asking when party size is missing; any destination the tools can reach.
+**MVP includes:** Accounts and itinerary history (Product Owner scope add; not in the vision), including **Google sign-in** on web and CLI as a way to be a signed-in account holder (Product Owner decision, **mjbvilhena**, 2026-09-20); parsing/accepting those fields from free text (Tokyo-style request); asking when party size is missing; capturing the 1–5 scoring matrix with **all required dimensions presented together** (web widget; CLI TUI widget; Product Owner decision, **mjbvilhena**, 2026-09-20); any destination the tools can reach.
 
 **Not this epic:** Completing bookings; UI pixel details; social features, sharing, or multi-user trip workspaces (unmentioned); social login other than Google; generic SSO/SAML; password-reset flows; guest/anonymous intake.
 
@@ -190,6 +190,7 @@ None remaining.
 - [x] **Channel:** Web + CLI, both chat-like. Not a multi-field form as primary intake, not API-only.
 - [x] **Data sources:** Curated allowlist first; live web only as fallback when the allowlist has no hit. No vendors named yet.
 - [x] **“Optimal” flight:** User scores named dimensions (at least price, duration, stops) 1–5; Supervisor uses that matrix, still bound by budget and dates.
+- [x] **Scoring matrix capture:** All required dimensions are presented at the same time so the consumer can see each score in the context of the others. Web: a widget (interaction pattern, not pixels). CLI: a TUI widget with the same simultaneous presentation. Product Owner decision (**mjbvilhena**, 2026-09-20). One-at-a-time chat that hides sibling scores is not the capture UX. Pixel details, extra required dimensions, and Supervisor application of the matrix remain unset / Epic 2. Primary trip intake remains chat-like natural language, not a multi-field form.
 - [x] **No feasible combination:** Rebalance first; then fail closed and ask which constraint to relax.
 - [x] **Booking links:** Direct/deep booking or reservation URLs required. Search-result URLs do not count.
 - [x] **“Book dining” (links path):** Reservation/booking page the user completes. Not a paid hold, not a listing.
@@ -209,7 +210,7 @@ The product specification and MVP epics were approved by **mjbvilhena** (2026-09
 
 Product spec, epics, user stories, and technical design (including ADRs) need **named human approval**. Drafted or merged files are not approval. Do not mark stories or epics Done or “complete” without that. Story-artefact approval is not implementation Done.
 
-Epic 1 user stories live at `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07; files merged in PR #5). **US-E1-01 through US-E1-04** are approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). **US-E1-05 through US-E1-07** remain drafted; there is no named human sign-off of those stories. Task 1.1 stays *(In progress)* until all Epic 1 stories are approved. Epic 1 application delivery remains Task 1.2 *(Not done)*.
+Epic 1 user stories live at `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07; files merged in PR #5). **US-E1-01 through US-E1-04** are approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). **US-E1-05** now includes simultaneous scoring-matrix capture (web widget; CLI TUI widget) as a Product Owner decision (**mjbvilhena**, 2026-09-20) and remains unapproved. **US-E1-06** and **US-E1-07** remain drafted; there is no named human sign-off of US-E1-05 through US-E1-07. Task 1.1 stays *(In progress)* until all Epic 1 stories are approved. Epic 1 application delivery remains Task 1.2 *(Not done)*.
 
 **Next:** await named human approval (**mjbvilhena**) of the remaining Epic 1 stories (US-E1-05 through US-E1-07). Do not start Epic 2 (or later) story refinement as if all Epic 1 stories were signed off.
 
