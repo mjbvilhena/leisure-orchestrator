@@ -15,8 +15,9 @@ Seed for `get_layer_consultant` (`orchestration`). Place this file at the reposi
 ## Consumer surfaces
 
 - **Channel:** Web + CLI, both **chat-like**. Not a multi-field form as primary intake, not API-only. *(Source: Resolved with Product Owner — Channel; In Scope MVP)*
-- The consumer is **signed in** (accounts are in MVP). *(Source: Core Workflows §1; Resolved with Product Owner — Persistence)*
+- The consumer is **signed in** (accounts are in MVP). **Google sign-in** is in scope as a way the consumer authenticates on web and CLI. *(Source: Core Workflows §1; Resolved with Product Owner — Persistence; Resolved with Product Owner — Google sign-in)*
 - Intake is a natural-language prompt with budget, dates, destination, preferences, and required party size, plus a 1–5 scoring matrix. *(Source: Epic 1; Core Workflows §1)*
+- Scoring-matrix **capture** presents all required dimensions **at the same time** so each score is visible in the context of the others: a **widget** on web, a **TUI widget** on CLI. Not one-at-a-time chat that hides sibling scores. Pixel details unset. This widget is not the primary trip intake (primary intake remains chat-like natural language). *(Source: Resolved with Product Owner — Scoring matrix capture; Core Workflows §1)*
 
 ## Agent team (named)
 
@@ -73,6 +74,7 @@ Sequence required by the specification *(Source: Core Workflows §3; Epic 3; Res
 ## Persistence (orchestration-relevant)
 
 - **Accounts and itinerary history** are in MVP and belong to Epic 1. *(Source: Resolved with Product Owner — Persistence)*
+- **Google sign-in:** the consumer authenticates with Google on the MVP web and CLI chat-like surfaces as a way to be a signed-in account holder. Other social providers, generic SSO/SAML, password-reset, and guest/anonymous intake are not in scope. *(Source: Resolved with Product Owner — Google sign-in)*
 - A signed-in consumer can retrieve past coordinated itineraries. *(Source: Epic 1)*
 
 ## Explicitly out of scope (orchestration)
@@ -81,6 +83,7 @@ Sequence required by the specification *(Source: Core Workflows §3; Epic 3; Res
 - Search-result URLs presented as booking links. *(Source: Out of Scope / Non-Goals)*
 - Acting as merchant of record. *(Source: Out of Scope / Non-Goals)*
 - API-only B2C or a multi-field form as the primary intake. *(Source: Out of Scope / Non-Goals; Resolved with Product Owner — Channel)*
+- Social login other than Google; generic SSO/SAML; password-reset flows; guest/anonymous intake; multi-user trip workspaces; sharing. *(Source: Resolved with Product Owner — Google sign-in; Epic 1 — Not this epic)*
 - Consumer-facing KB editor. *(Source: Future Scope; Epic 2)*
 - The user manually assigning agents. *(Source: Epic 2)*
 
@@ -91,9 +94,11 @@ The specification does not state the following. Omit them from implementation gu
 - Orchestration runtime, framework name, message bus, or workflow engine
 - Parallel vs sequential specialist execution
 - How remaining budget is stored or locked (race conditions are named as a **risk**, not as a chosen design) *(Source: Risks)*
-- Named vendors for KBs, web fallback, payments, or identity *(Source: Resolved with Product Owner — Data sources: “No vendors named yet”)*
+- Named vendors for KBs, web fallback, or payments *(Source: Resolved with Product Owner — Data sources: “No vendors named yet”)*
+- Identity providers other than Google *(Source: Resolved with Product Owner — Google sign-in names Google only)*
 - KB file format, allowlist schema, or refresh cadence (staleness is a **risk**, not a policy) *(Source: Risks)*
-- Authentication/session mechanism for web or CLI
+- Authentication protocol, SDK, or session store beyond Google sign-in as the in-scope method *(Source: Resolved with Product Owner — Google sign-in names the provider, not the protocol)*
 - Card-integration provider or checkout UX beyond pass-through vs links
 - Feature flags, rollout rings, or SLA/latency numbers
 - Partial-itinerary UX other than the specified fail-closed path
+- Widget/TUI library, pixel layout, or control look beyond simultaneous presentation of the required scoring dimensions *(Source: Resolved with Product Owner — Scoring matrix capture names the interaction pattern, not pixels)*
