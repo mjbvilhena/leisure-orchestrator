@@ -204,9 +204,12 @@ None remaining.
 
 ## Next step
 
-Epics are approved. Do not write sprint-level tasks in this spec. Track delivery status in `docs/product/backlog.md`. Epic 1 user stories are in `docs/product/user-stories/epic-1/`. Continue `/sdlc-user-story-refiner` (or equivalent) on remaining epics in this order:
+Epics are approved. Do not write sprint-level tasks in this spec. Track delivery status in `docs/product/backlog.md`.
 
-1. Epic 1 — Natural-language intake of trip constraints (includes accounts and itinerary history) — stories: `docs/product/user-stories/epic-1/`
-2. Epic 2 — Supervisor and specialist-agent delegation
-3. Epic 3 — Shared remaining-budget coordination
-4. Epic 4 — Finalized itinerary with fulfillment choice
+**Epic 1 user stories are complete** at `docs/product/user-stories/epic-1/` (backlog Task 1.1 Done). Epic 1 application delivery remains Task 1.2 *(Not done)*.
+
+Continue `/sdlc-user-story-refiner` (or equivalent) on remaining epics in this order:
+
+1. Epic 2 — Supervisor and specialist-agent delegation
+2. Epic 3 — Shared remaining-budget coordination
+3. Epic 4 — Finalized itinerary with fulfillment choice
