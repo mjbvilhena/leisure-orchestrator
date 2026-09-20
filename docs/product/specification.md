@@ -8,7 +8,7 @@ Standard product specification / epic pack that bridges the vision document and 
 
 **Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs when this spec was first authored. Travel and orchestration rules that this specification already states are now seeded in repo-root `DOMAIN.md` and `LAYER.md`. No personas, KPIs, vendors, or success metrics were invented. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**. Topics the specification does not state are listed as **Unset — do not invent** in those files.
 
-**Status:** Epics approved by **mjbvilhena** (2026-09-15). Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 user stories: `docs/product/user-stories/epic-1/`.
+**Status:** Spec and MVP epics approved by **mjbvilhena** (2026-09-15, PR #1). Epic 1 user stories drafted, awaiting named human approval. Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 drafts: `docs/product/user-stories/epic-1/`.
 
 ---
 
@@ -204,9 +204,12 @@ None remaining.
 
 ## Next step
 
-Epics are approved. Do not write sprint-level tasks in this spec. Track delivery status in `docs/product/backlog.md`. Epic 1 user stories are in `docs/product/user-stories/epic-1/`. Continue `/sdlc-user-story-refiner` (or equivalent) on remaining epics in this order:
+The product specification and MVP epics were approved by **mjbvilhena** (2026-09-15, PR #1). That is named human approval of the spec and epics, not of later user stories. Do not write sprint-level tasks in this spec. Track delivery status in `docs/product/backlog.md`.
 
-1. Epic 1 — Natural-language intake of trip constraints (includes accounts and itinerary history) — stories: `docs/product/user-stories/epic-1/`
-2. Epic 2 — Supervisor and specialist-agent delegation
-3. Epic 3 — Shared remaining-budget coordination
-4. Epic 4 — Finalized itinerary with fulfillment choice
+Product spec, epics, user stories, and technical design (including ADRs) need **named human approval**. Drafted or merged files are not approval. Do not mark stories or epics Done or “complete” without that.
+
+Epic 1 user stories are **drafted** at `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07; files merged in PR #5). There is no named human sign-off of those stories. Epic 1 application delivery remains Task 1.2 *(Not done)*.
+
+**Next:** await named human approval (**mjbvilhena**) of the existing Epic 1 stories. Do not start Epic 2 (or later) story refinement as if Epic 1 stories were signed off.
+
+Only after that approval, continue `/sdlc-user-story-refiner` (or equivalent) on remaining epics: Epic 2 (Supervisor and specialist-agent delegation), then Epic 3 (Shared remaining-budget coordination), then Epic 4 (Finalized itinerary with fulfillment choice).

@@ -2,7 +2,7 @@
 
 **Epic:** Natural-language intake of trip constraints
 **Source:** `docs/product/specification.md` (Epic 1; Core Workflows §1; Resolved with Product Owner)
-**Backlog:** Task 1.1 *(Done)* when these files exist; Task 1.2 *(Not done)* until the outcome ships in an application
+**Backlog:** Task 1.1 *(In progress)* — files drafted, awaiting named human approval (**mjbvilhena**); drafted or merged files are not approval. Task 1.2 *(Not done)* until the outcome ships in an application
 
 ## Outcome this epic must enable
 
