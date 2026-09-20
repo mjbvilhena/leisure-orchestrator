@@ -2,7 +2,7 @@
 
 **Epic:** 1 — Natural-language intake of trip constraints
 **Issue Type:** User Story
-**Status:** Ready for development (story only; no application delivery in this change)
+**Status:** Drafted — awaiting named human approval (not ready for development)
 **Source:** Epic 1; Resolved with Product Owner — Persistence; Core Workflows §4
 
 ## 1. Description
