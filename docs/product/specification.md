@@ -8,7 +8,7 @@ Standard product specification / epic pack that bridges the vision document and 
 
 **Consultant notes:** `get_domain_consultant` (`travel`) and `get_layer_consultant` (`orchestration`) returned empty catalogs when this spec was first authored. Travel and orchestration rules that this specification already states are now seeded in repo-root `DOMAIN.md` and `LAYER.md`. No personas, KPIs, or success metrics were invented. Vendors remain unnamed except **Google sign-in**, which is a Product Owner decision (see **Resolved with Product Owner**), not an invented identity vendor. Scope that the vision did not state is marked as a Product Owner decision in **Resolved with Product Owner**. Topics the specification does not state are listed as **Unset — do not invent** in those files.
 
-**Status:** Spec and MVP epics approved by **mjbvilhena** (2026-09-15, PR #1). US-E1-01 through US-E1-06 approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). US-E1-07 remains drafted, awaiting named human approval. Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 stories: `docs/product/user-stories/epic-1/`.
+**Status:** Spec and MVP epics approved by **mjbvilhena** (2026-09-15, PR #1). Epic 1 user stories US-E1-01 through US-E1-07 approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). Story-artefact approval is not application delivery. Open questions: none remaining. Implementation backlog: `docs/product/backlog.md`. Epic 1 stories: `docs/product/user-stories/epic-1/`.
 
 ---
 
@@ -206,12 +206,10 @@ None remaining.
 
 ## Next step
 
-The product specification and MVP epics were approved by **mjbvilhena** (2026-09-15, PR #1). That is named human approval of the spec and epics, not of later user stories except where a story records its own named sign-off. Do not write sprint-level tasks in this spec. Track delivery status in `docs/product/backlog.md`.
+The product specification and MVP epics were approved by **mjbvilhena** (2026-09-15, PR #1). Epic 1 user stories (US-E1-01 through US-E1-07) are **approved** by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). That sign-off includes Google sign-in (US-E1-01) and simultaneous scoring-matrix capture (US-E1-05). Do not write sprint-level tasks in this spec. Track delivery status in `docs/product/backlog.md`.
 
 Product spec, epics, user stories, and technical design (including ADRs) need **named human approval**. Drafted or merged files are not approval. Do not mark stories or epics Done or “complete” without that. Story-artefact approval is not implementation Done.
 
-Epic 1 user stories live at `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07; files merged in PR #5). **US-E1-01 through US-E1-06** are approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). **US-E1-07** remains drafted; there is no named human sign-off of that story. Task 1.1 stays *(In progress)* until US-E1-07 is approved. Epic 1 application delivery remains Task 1.2 *(Not done)*.
+Epic 1 user stories live at `docs/product/user-stories/epic-1/`. Task 1.1 is *(Done)* (all Epic 1 story artefacts approved). Epic 1 application delivery remains Task 1.2 *(Not done)* — there is no application source, tests, or runtime.
 
-**Next:** await named human approval (**mjbvilhena**) of the remaining Epic 1 story (US-E1-07). Do not start Epic 2 (or later) story refinement as if all Epic 1 stories were signed off.
-
-Only after that approval, continue `/sdlc-user-story-refiner` (or equivalent) on remaining epics: Epic 2 (Supervisor and specialist-agent delegation), then Epic 3 (Shared remaining-budget coordination), then Epic 4 (Finalized itinerary with fulfillment choice).
+**Next:** design/planning for Epic 1 slices and/or Epic 2 story refinement per conductor. Do not claim application delivery Done. Continue `/sdlc-user-story-refiner` (or equivalent) on remaining epics when the conductor so directs: Epic 2 (Supervisor and specialist-agent delegation), then Epic 3 (Shared remaining-budget coordination), then Epic 4 (Finalized itinerary with fulfillment choice).
