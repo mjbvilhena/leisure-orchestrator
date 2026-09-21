@@ -39,7 +39,7 @@ Seed for `get_domain_consultant` (`travel`). Place this file at the repository r
 6. **Any destination** the curated tools (plus web fallback) can reach. Tokyo is the golden-path example, not a lock.
 7. **Accounts and itinerary history.** **Google sign-in** (the consumer authenticates with Google on the MVP web and CLI chat-like surfaces as a way to be a signed-in account holder) is a Product Owner decision. *(Source: In Scope MVP — Product Owner scope adds; Resolved with Product Owner — Persistence; Resolved with Product Owner — Google sign-in)*
 8. **Optional dual-mode fulfillment:** the user chooses in-product charged booking **or** direct-booking links.
-9. **Preference scoring:** the user rates named dimensions (at least price, duration, stops) 1–5; that matrix is judgement, still bound by budget and dates.
+9. **Preference scoring:** the user rates named dimensions (at least price, duration, stops) 1–5; that matrix is judgement, still bound by budget and dates. Capture presents **all required dimensions at the same time** (web widget; CLI TUI widget). Pixel details unset. *(Source: In Scope MVP — Product Owner scope adds; Resolved with Product Owner — Scoring matrix capture)*
 
 ## Travel constraint fields the product must accept
 
@@ -52,7 +52,7 @@ The intake must produce a structured, machine-usable set of constraints for the 
 | Destination | Any destination the curated tools (plus web fallback) can reach; Tokyo is an example, not a lock | Product Owner scope add; Resolved with Product Owner |
 | Preferences | Accepted from the natural-language prompt (example: high-end sushi reservation) | In Scope MVP; Canonical example |
 | Party size | Required; ask if missing; do not plan until it is present | Product Owner scope add; Resolved with Product Owner |
-| Scoring matrix | Named dimensions, at least **price**, **duration**, and **stops**; each rated 1 (not important) to 5 (critical) | Product Owner scope add; Resolved with Product Owner |
+| Scoring matrix | Named dimensions, at least **price**, **duration**, and **stops**; each rated 1 (not important) to 5 (critical). Capture presents all required dimensions at the same time (web widget; CLI TUI widget). Pixel details unset. | Product Owner scope add; Resolved with Product Owner — “Optimal” flight; Scoring matrix capture |
 
 ## Canonical travel example
 
@@ -102,3 +102,4 @@ The specification does not state the following. Omit them from implementation gu
 - A closed list of reachable destinations (coverage is “any destination the tools can reach”)
 - What “preferences” means beyond prompt text plus the named 1–5 scoring dimensions
 - Extra scoring dimensions beyond the required minimum of price, duration, and stops
+- Pixel layout or control look of scoring-matrix capture (the specification names simultaneous web widget + CLI TUI widget only) *(Source: Resolved with Product Owner — Scoring matrix capture)*
