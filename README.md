@@ -10,6 +10,7 @@ This repository currently holds product specification and related documentation.
 - `docs/product/specification.md` — product specification and MVP epics
 - `docs/product/backlog.md` — product backlog with status (audited against the repo)
 - `docs/product/user-stories/epic-1/` — Epic 1 user stories (intake, accounts, history)
+- `docs/technical_design/` — Epic 1 design/planning drafts (RFC, API, UX, test plans, threat model). Draft ≠ approval.
 - `DOMAIN.md` — travel-domain constraints seeded from the specification (for domain consultants)
 - `LAYER.md` — orchestration-layer constraints seeded from the specification (for layer consultants)
 - `.github/workflows/` — CI quality checks
