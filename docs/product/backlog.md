@@ -1,6 +1,6 @@
 # Product Backlog
 
-> Status convention: each task line includes `*(Done)*`, `*(In progress)*`, or `*(Not done)*` based on the repo audit (2026-09-16, updated 2026-09-21). Product spec, epics, user stories, and technical design (including ADRs) need **named human approval**; drafted or merged files are not approval — do not mark stories or epics Done or “complete” without that. MVP epics in `docs/product/specification.md` were approved by **mjbvilhena** (2026-09-15, PR #1). Epic 1 user stories US-E1-01 through US-E1-07 were approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). Epic 1 design/planning drafts landed 2026-09-20 under `docs/technical_design/` (RFC-0001, API design/contract, UX, test plan, e2e plan, threat model) — **Draft only**, not technical-design approval. There is still no application source tree, test suite, or runtime. Story *approval* is not implementation *Done*. Epic *approval* is not implementation *Done*. Drafted RFCs are not implement permission.
+> Status convention: each task line includes `*(Done)*`, `*(In progress)*`, or `*(Not done)*` based on the repo audit (2026-09-16, updated 2026-09-22). Product spec, epics, user stories, and technical design (including ADRs) need **named human approval**; drafted or merged files are not approval — do not mark stories or epics Done or “complete” without that. MVP epics in `docs/product/specification.md` were approved by **mjbvilhena** (2026-09-15, PR #1). Epic 1 user stories US-E1-01 through US-E1-07 were approved by **mjbvilhena** (2026-09-20, named human sign-off of the story artefacts). Epic 1 design/planning drafts landed 2026-09-20 under `docs/technical_design/` (RFC-0001, API design/contract, UX, test plan, e2e plan, threat model) — **Draft only**, not technical-design approval. There is still no application source tree, test suite, or runtime. Story *approval* is not implementation *Done*. Epic *approval* is not implementation *Done*. Drafted RFCs are not implement permission.
 
 ## Epic 1: Natural-language intake of trip constraints
 
@@ -14,7 +14,7 @@
 
 > Outcome (from product specification): a single request spawns Supervisor, Flight Broker, Lodging Broker, and Concierge Agent; specialists use curated KB first and live web only as fallback.
 
-- **Task 2.1** *(Not done)*: Refine Epic 2 into user stories (Epic 1 story-artefact approval gate is cleared; start when the conductor directs). *(Evidence: 2026-09-21 re-audit — no `docs/product/user-stories/epic-2/`; no application source. Product-spec Next step is design/planning for Epic 1 slices and/or Epic 2 story refinement per conductor.)*
+- **Task 2.1** *(Not done)*: Refine Epic 2 into user stories (Epic 1 story-artefact approval gate is cleared; start when the conductor directs). *(Evidence: 2026-09-22 re-audit — no `docs/product/user-stories/epic-2/`; no application source. Product-spec Next step (on this branch) points at Epic 1 `docs/technical_design/` drafts pending named sign-off before implement; Epic 2 story refinement remains conductor-gated after that gate.)*
 - **Task 2.2** *(Not done)*: Deliver Epic 2 outcome (autonomous delegation + per-specialist curated KBs). *(Evidence: 2026-09-21 re-audit — no application source.)*
 
 ## Epic 3: Shared remaining-budget coordination
