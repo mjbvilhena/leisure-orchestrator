@@ -231,7 +231,7 @@ Working strings use story/spec words. Exact party-size ask and unnamed control l
 
 - **Upstream:** approved Epic 1 stories; product spec.
 - **Parallel:** RFC-0001 and intake API design/contract (Draft). Clients call that API; this artefact does not change field names.
-- **Front door:** `sdlc-conductor` Job B should index this path. Remaining design-band items: test plan, e2e test plan, threat model. Technical design still needs named human approval before implement.
+- **Front door:** `sdlc-conductor` Job B should index this path. Sibling drafts already exist and remain **Draft**: [`test-plan-epic-1-intake.md`](test-plan-epic-1-intake.md), [`e2e-test-plan-epic-1-intake.md`](e2e-test-plan-epic-1-intake.md), [`threat-model-epic-1-intake.md`](threat-model-epic-1-intake.md). Technical design still needs named human approval before implement.
 - **Verify-time only:** `sdlc-a11y-auditor`.
 
 ## `ui change` DoD (design-time note)

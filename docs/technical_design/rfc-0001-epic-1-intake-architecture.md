@@ -8,7 +8,7 @@
 | Authors | `sdlc-rfc-drafter` (engineering) |
 | Reviewers wanted | Product Owner (**mjbvilhena**); orchestration layer; travel domain (`leisure orchestrator`) |
 | Last updated | 2026-09-20 |
-| Related | `docs/product/specification.md` (Epic 1; Core Workflows §1, §4); `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07, approved by **mjbvilhena** 2026-09-20); `DOMAIN.md`; `LAYER.md`; `docs/product/backlog.md` Task 1.2. Field-level HTTP contract: follow-on `api design` / `api contract` (not yet drafted). UX wireframes: follow-on `ux design`. Threat model: follow-on, because Google sign-in and per-account history cross a trust boundary. |
+| Related | `docs/product/specification.md` (Epic 1; Core Workflows §1, §4); `docs/product/user-stories/epic-1/` (US-E1-01 through US-E1-07, approved by **mjbvilhena** 2026-09-20); `DOMAIN.md`; `LAYER.md`; `docs/product/backlog.md` Tasks 1.2–1.3. Sibling drafts in this folder remain **Draft** (residual risk not accepted): [`api-design-epic-1-intake.md`](api-design-epic-1-intake.md), [`api-contract-epic-1-intake.md`](api-contract-epic-1-intake.md), [`ux-epic-1-intake.md`](ux-epic-1-intake.md), [`test-plan-epic-1-intake.md`](test-plan-epic-1-intake.md), [`e2e-test-plan-epic-1-intake.md`](e2e-test-plan-epic-1-intake.md), [`threat-model-epic-1-intake.md`](threat-model-epic-1-intake.md). |
 
 This RFC is **not** approved. Drafted files are not technical-design approval. Decision is blank until named human sign-off or an explicit “treat as approved” sentence.
 
@@ -63,7 +63,7 @@ Evidence from the open workspace (2026-09-20):
 - Epic 1 stories US-E1-01 through US-E1-07: `docs/product/user-stories/epic-1/`. Story artefacts approved by **mjbvilhena** (2026-09-20). Story-artefact approval is not implementation Done.
 - Domain/layer seeds: `DOMAIN.md` (travel; consultant name `leisure orchestrator`), `LAYER.md` (orchestration).
 - CI: `.github/workflows/qa.yml` (secret scan, markdown lint, workflow lint). `CODEOWNERS` assigns `@mjbvilhena`.
-- **No application source tree, test suite, runtime, RFC, API contract, UX artefact, test plan, or threat model.**
+- **No application source, tests, or runtime** — still true on the 2026-09-22 re-audit. Sibling drafts now exist under `docs/technical_design/` and remain **Draft**.
 
 Constraints already published (not proposals):
 
@@ -203,7 +203,7 @@ Controls this proposal relies on:
 - Do not log Google credentials, authorization codes, refresh tokens, or session secrets. Do not put them in URLs.
 - ConstraintSet may contain trip details (dates, destination, party size, preferences). Treat as personal data in logs: avoid prompt dump at info level.
 
-A full threat model is a follow-on artefact. This RFC does not claim certifications or residual risk sign-off.
+Threat model: [`threat-model-epic-1-intake.md`](threat-model-epic-1-intake.md) (**Draft**; residual risk not accepted). This RFC does not claim certifications or residual risk sign-off.
 
 ### Observability
 
