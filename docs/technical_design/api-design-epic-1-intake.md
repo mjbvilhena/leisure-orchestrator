@@ -25,7 +25,7 @@ This document is **Draft**. It is not technical-design approval. RFC-0001 is als
 
 `api change` DoD (design-time gaps, not permission to invent behavior): contract is the sibling markdown (OpenAPI path still **proposed**); compatibility labeled below; error model in this document; authn/z per operation; idempotency per write; validation and synthetic examples in the contract; provider tests are listed as **open work** for implement/verify. Changelog is not due until a shipped version exists.
 
-`security change` DoD (design-time gaps): threat model is **not started** (`sdlc-threat-modeler`); authn/z is specified per operation; sensitive fields must not appear in logs or URLs; no hard-coded credentials; rate/size limits considered below; audit events named without secret payloads; authz negative tests are contract-test work; no exploit PoCs; no certification claims.
+`security change` DoD (design-time gaps): threat model draft exists at [`threat-model-epic-1-intake.md`](threat-model-epic-1-intake.md) (**Draft**; residual risk not accepted; verify-time `security_review` still required when code lands); authn/z is specified per operation; sensitive fields must not appear in logs or URLs; no hard-coded credentials; rate/size limits considered below; audit events named without secret payloads; authz negative tests are contract-test work; no exploit PoCs; no certification claims.
 
 ## Resources and operations
 
@@ -135,6 +135,6 @@ House envelope (new; use everywhere in this API):
 | Examples | Synthetic in the contract |
 | Provider/consumer tests | Listed; **not implemented** (no application source) |
 | Changelog | Not applicable until first ship |
-| Threat model | **Missing** — follow-on `sdlc-threat-modeler` |
+| Threat model | Draft at [`threat-model-epic-1-intake.md`](threat-model-epic-1-intake.md) — residual risk not accepted; not named-human-approved |
 | Secrets | None in examples |
 | Certification claims | None |
